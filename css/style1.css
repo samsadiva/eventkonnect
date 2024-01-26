@@ -24,13 +24,6 @@
       color: #3498db; /* Blue */
     }
 
-    .navbar #logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #ecf0f1;
-      text-decoration: none;
-    }
-
     .navbar input[type=text], .navbar select {
       border: none;
       font-size: 14px;
@@ -50,18 +43,15 @@
       background-color: #3498db; /* Blue */
       color: #ecf0f1;
       border-radius: 5px;
-      padding: 12px 18px;
       margin-left: 10px;
     }
 
-      .navbar #logo, .navbar a, .navbar input, .navbar select {
-        width: 100%;
+      .navbar #logo {
+        width: 200px;
         text-align: left;
-        margin: 2px;
       }
 
       .navbar .right {
         justify-content: flex-start;
-        margin-top: 10px;
       }
     
