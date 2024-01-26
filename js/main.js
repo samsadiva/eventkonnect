@@ -82,3 +82,33 @@ btnCloseMenu.addEventListener('click', e => {
   })
   document.querySelector('body').style.overflow = 'visible'
 })
+// search icon
+$(document).ready(function () {
+    $('.search-panel .dropdown-menu a').click(function (e) {
+      e.preventDefault();
+      var param = $(this).attr("href").replace("#", "");
+      var concept = $(this).text();
+      $('.search-panel span#search_concept').text(concept);
+      $('.input-group #search_param').val(param);
+    });
+
+    $('#search-icon').on('click', function () {
+      $('#search').toggleClass('expanded').focus();
+    });
+
+    $('#search').on('focus', function () {
+      $(this).addClass('expanded');
+    });
+
+    $('#search').on('blur', function () {
+      if ($(this).val().trim() === '') {
+        $(this).removeClass('expanded');
+      }
+    });
+
+    $('#search').on('keyup', function (evt) {
+      if (evt.keyCode === 13) {
+        alert('Search triggered!');
+      }
+    });
+  });

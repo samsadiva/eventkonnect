@@ -7,6 +7,7 @@
 body {
   background-color: #EAEDED;
   font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 a {
@@ -14,15 +15,15 @@ a {
 }
 
 .container {
-  margin: auto;
-  width: 97%;
-  max-width: 1100px;
+  margin: 0;
+  width: 100%;
+  max-width: 1300px;
 }
 
 main article {
   background: #FFF;
-  margin: 20px 0;
-  padding: 20px;
+  margin: 0;
+  padding: 2px;
   height: 1200px;
 }
 
@@ -265,4 +266,37 @@ main article {
   width: 50%;
   height: 50%;
 }
+/* styling bod's div that is sliding horizontally */
 
+
+
+ /* Custom Styles */
+    .carousel-control-prev, .carousel-control-next {
+      width: 5%;
+      color: #fff;
+    }
+
+    /* Optional: Custom styling for caret icons */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #007bff;
+    }
+
+    /* Optional: Change the color of caret icons on hover */
+    .carousel-control-prev:hover, .carousel-control-next:hover {
+      color: #0056b3;
+    }
+
+    /* Custom styles for larger screens (e.g., screens wider than 768px) */
+    @media (min-width: 768px) {
+      .carousel-inner .col-md-4 {
+        width: 33.33333333%;
+        display: inline-block;
+      }
+    }
+    /*end */
+    .card-img{
+      max-width:100%;
+     height: 300px;
+    }
+    
