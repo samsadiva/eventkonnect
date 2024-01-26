@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script type="text/javascript" src="path/to/your/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -29,26 +30,26 @@
       filter: brightness(0) invert(1);
     }
 
-    .top-links {
+    .top-links, .footer-links {
       display: flex;
       align-items: center;
     }
 
-    .top-links .nav-item {
+    .top-links .nav-item, .footer-links .nav-item {
       margin-right: 15px;
     }
 
-    .top-links .nav-item:last-child {
+    .top-links .nav-item:last-child, .footer-links .nav-item:last-child {
       margin-right: 0;
     }
 
-    .top-links .nav-link {
+    .top-links .nav-link, .footer-links .nav-link {
       color: #ffffff;
       font-weight: bold;
       transition: color 0.3s ease-in-out;
     }
 
-    .top-links .nav-link:hover {
+    .top-links .nav-link:hover, .footer-links .nav-link:hover {
       color: #ffd700; /* Golden yellow */
     }
 
@@ -74,13 +75,28 @@
       background-color: #ffffff;
     }
 
-    .navbar-nav .nav-item {
+    .navbar-nav1 .nav-item {
       transform-origin: center;
       transition: transform 0.3s ease-in-out;
     }
 
-    .navbar-nav .nav-item:hover {
+    .navbar-nav1 .nav-item:hover {
       transform: scale(1.1);
+    }
+
+    /* Skeleton for Main Content Area */
+    .main-content {
+      padding: 40px;
+      text-align: center;
+      color: #333333;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
     }
   </style>
 </head>
@@ -91,13 +107,13 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="your-logo.png" alt="Your Company Logo" height="30">
+        <img src="image/logo.png" alt="Your Company Logo" height="100px" width="100px">
         <span style="color: #000000; font-size: 1.2rem;">Your Beautiful Company</span>
       </a>
 
       <!-- Top Navigation Links (Country, Search, Language, Register, Login) with Icons -->
       <div class="top-links">
-        <a class="nav-item nav-link" href="#"><i class="fas fa-globe"></i> Explore</a>
+        <a class="nav-item nav-link" href="#"> Explore</a>
         <a class="nav-item nav-link" href="#"><i class="fas fa-search"></i> Discover</a>
         <a class="nav-item nav-link" href="#"><i class="fas fa-language"></i> Language</a>
         <a class="nav-item nav-link" href="#"><i class="fas fa-user-plus"></i> Join Us</a>
@@ -107,38 +123,31 @@
   </nav>
 </div>
 
+
 <!-- Second Horizontal Part with Menu -->
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
 
-    <!-- Toggle Button for Mobile -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
     <!-- Menu Items with Hover Effect -->
-    <div class="collapse navbar-collapse menu-links" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Categories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Inspiration</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-      </ul>
+    <div class="top-links navbar-nav1">
+      <a class="nav-item nav-link" href="#"> All categories</a>
+      <a class="nav-item nav-link" href="#">Active Events</a>
+      <a class="nav-item nav-link" href="#"> reflection</a>
+      <a class="nav-item nav-link" href="#"> about Us</a>
     </div>
-
   </div>
 </nav>
+
+<!-- Main Content Area (Skeleton) -->
+<div class="main-content">
+  <!-- Your content -->
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; 2024 Your Beautiful Company. All rights reserved.</p>
+</div>
 
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
