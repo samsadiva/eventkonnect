@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="image/headerlogo.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="css/index.css">
@@ -24,32 +25,49 @@ end of the Code for footer
 </head>
 <body>
   
+<!-- start top nav -->
 
-  <div class="navbar">
-    <img src="image/logo1.png" width="20px" height="130px" alt="event-system-logo" id="logo">
-   
-    <div class="search-container">
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
+<div class="special-header">
+  <div class="container">
+    <!-- Logo on the left -->
+    <div>
+      <img src="image/logo3.png" alt="Logo" class="logo">
     </div>
-
-    <select>
-      <option value="country1">Country 1</option>
-      <option value="country2">Country 2</option>
-      <option value="country3">Country 3</option>
-    </select>
-    <select>
-      <option value="language1">Language 1</option>
-      <option value="language2">Language 2</option>
-      <option value="language3">Language 3</option>
-    </select>
-    <div class="right">
-      <a href="#" class="sign-up">Sign Up</a>
-      <a href="#" class="sign-in">Sign In</a>
+    <!-- Search in the center -->
+    <div class="search-bar">
+      <input type="text" class="form-control search-input" placeholder="Search...">
+    </div>
+    <!-- Additional links on the right -->
+    <div class="additional-links">
+      <div class="dropdown">
+        <span class="link-item dropdown-toggle" id="countryDropdown" data-toggle="dropdown">
+          <i class="fas fa-globe"></i> Country
+        </span>
+        <div class="dropdown-menu" aria-labelledby="countryDropdown">
+          <a class="dropdown-item" href="#">United States</a>
+          <a class="dropdown-item" href="#">United Kingdom</a>
+          <a class="dropdown-item" href="#">Canada</a>
+          <!-- Add more countries as needed -->
+        </div>
+      </div>
+      <div class="dropdown">
+        <span class="link-item dropdown-toggle" id="languageDropdown" data-toggle="dropdown">
+          <i class="fas fa-language"></i> Language
+        </span>
+        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+          <a class="dropdown-item" href="#">English</a>
+          <a class="dropdown-item" href="#">Spanish</a>
+          <a class="dropdown-item" href="#">French</a>
+          <!-- Add more languages as needed -->
+        </div>
+      </div>
+      <span class="link-item"><i class="fas fa-sign-in-alt"></i> Sign In</span>
+      <span class="link-item"><i class="fas fa-user-plus"></i> Sign Up</span>
     </div>
   </div>
+</div>
+
+<!-- end top nav-->
 
 
   <nav class="menu" id="menu">
@@ -60,7 +78,7 @@ end of the Code for footer
 
     <div class="container container-nav-links">
       <div class="btn-departments" id="btn-departments">
-        <p>All <span>Services</span></p>
+        <p>EVENT <span>ENVOYS</span></p>
         <i class="fas fa-caret-down"></i>
       </div>
 
@@ -624,5 +642,6 @@ end of the Code for footer
   <!--======================================= MAIN FOOTER ENDS =========================== -->
   
   <!-- end of footer-->
+  <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
